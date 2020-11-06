@@ -11,7 +11,7 @@ body,ul,li{
     height:1000px;
   }
   .con{
-    width:1103px;
+    width:1676px;
   }
   .con{
     margin-left:auto;
@@ -31,16 +31,26 @@ body,ul,li{
     text-align:center;
   }
   .side-bar>a{
-    color:white;
-    font-size:30px;
     font-weight:bold;
   }
+  .side-bar>.w{
+    color:white;
+    font-size:30px;
+  }
   .side-bar>.vertical-txt{
-    font-weight:none;
+    color:white;
+    margin-top:55px;
+    font-size:13px;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
   }
   .con .logo{
     position:fixed;
-    top:40px;
+    top:80px;
+    left:80px;
+  }
+  .main{
+    position:relative;
   }
   .img-box>img{
     width:100%;
@@ -56,19 +66,36 @@ body,ul,li{
     content:"";
     background-color:white;
     position:fixed;
-    top:60px;
+    top:80px;
     right:60px;
     height:5px;
     width:42px;
   }
   .bar-2:after{
-    top:75px;
+    top:95px;
     right:60px;
   }
   .bar-3:after{
-    top:90px;
+    top:110px;
     right:60px;
   }
-  body{
-    background-color:red;
+  .video-content{
+   position:absolute;
+    top:50px;
+    left:50px;
+    right:50px;
+    bottom:0;
+    transition:all 1s;
+  }
+  .video-content>video{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .video-content:hover{
+     top:0;
+    left:0;
+    right:0;
+    bottom:0;
   }
